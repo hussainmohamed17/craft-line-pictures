@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>craftline pictures — Photography Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<!-- Google Fonts Integration for the Typography Engine -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- LOADING -->
+<div id="loading">
+  <div class="logo"><img src="logo.png" alt="Craftline Pictures Logo"></div>
+  <div class="load-logo">Craft line Pictures</div>
+  <div class="load-bar-wrap"><div class="load-bar"></div></div>
+  <div class="load-sub">Crafting your story…</div>
+</div>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="logo"><img src="logo.png" alt="Logo"></div>
+  <div class="nav-links" id="nav-links">
+    <a class="nav-link" href="#hero">Home</a>
+    <a class="nav-link" href="#about">About</a>
+    <a class="nav-link" href="#portfolio">Portfolio</a>
+    <a class="nav-link" href="#services">Services</a>
+    <a class="nav-link" href="#testimonials">Testimonials</a>
+    <a class="nav-link" href="#pricing">Pricing</a>
+    <a class="nav-link" href="#blog">Blog</a>
+    <a class="nav-link" href="#contact">Contact</a>
+  </div>
+  <div style="display:flex;align-items:center;gap:.9rem">
+    <button id="dark-toggle" title="Toggle theme" style="background:none;border:1.5px solid rgb(255, 255, 255);color: #d391169f;;border-radius:50%;width:34px;height:34px;cursor:pointer;font-size:.9rem">☀</button>
+    <button class="hamburger" id="hmbgr">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div id="mob-menu">
+  <a href="#hero" onclick="closeMob()">Home</a>
+  <a href="#about" onclick="closeMob()">About</a>
+  <a href="#portfolio" onclick="closeMob()">Portfolio</a>
+  <a href="#services" onclick="closeMob()">Services</a>
+  <a href="#testimonials" onclick="closeMob()">Testimonials</a>
+  <a href="#pricing" onclick="closeMob()">Pricing</a>
+  <a href="#blog" onclick="closeMob()">Blog</a>
+  <a href="#contact" onclick="closeMob()">Contact</a>
+</div>
+
+<!-- HERO -->
+<!-- HERO MAIN CONTAINER -->
+<section id="hero">
+  <div class="hero-slide active" id="slide0">
+    <img src="h1.JPG" alt="Wedding photography"/>
+  </div>
+  <div class="hero-slide" id="slide1">
+    <img src="h2.jpg" alt="Couple photography"/>
+  </div>
+  <div class="hero-slide" id="slide2">
+    <img src="h3.JPG" alt="Landscape photography"/>
+  </div>
+  <div class="hero-slide" id="slide3">
+    <img src="h4.jpg" alt="Landscape photography"/>
+  </div>
+  <div class="hero-overlay"></div>
+  
+  <!-- MERGED HERO CONTENT BLOCK -->
+  <div class="hero-content">
+    <div class="hero-eyebrow tag">✦ Crafting Your Stories ✦</div>
+    
+    <!-- Re-engineered Typographic Title Structure -->
+    <h1 class="hero-title">
+      <span class="title-script">Craft line</span>
+      <span class="title-sub">Pictures</span>
+    </h1>
+    
+    <p class="hero-sub">Capturing Timeless Stories Through My Lens</p>
+    <div class="hero-btns">
+      <a href="#portfolio" class="btn-g" style="padding:.95rem 2.4rem">View Portfolio</a>
+      <a href="#contact" class="btn-o" style="padding:.95rem 2.4rem">Book a Session</a>
+    </div>
+  </div>
+  
+  <div class="hero-dots">
+    <button class="hero-dot active" onclick="setSlide(0)"></button>
+    <button class="hero-dot" onclick="setSlide(1)"></button>
+    <button class="hero-dot" onclick="setSlide(2)"></button>
+  </div>
+  <div class="scroll-cue" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-img-wrap reveal">
+      <img src="rahman3.jpeg" alt="Rahman — Photographer"/>
+      <div class="about-badge">
+        <div class="num">10+</div>
+        <div class="lbl">Years of Excellence</div>
+      </div>
+    </div>
+    <div class="reveal" style="animation-delay:.18s">
+      <p class="tag">About Me</p>
+      <h2 class="pd" style="font-size:clamp(1.9rem,3.5vw,2.9rem);margin-top:.85rem;margin-bottom:1.2rem;line-height:1.15">Telling Stories Through<br/><em style="color:var(--gold)">Light & Shadow</em></h2>
+      <div class="rule" style="margin-bottom:1.5rem"></div>
+      <p style="color:var(--muted);line-height:1.82;margin-bottom:1rem;font-size:.93rem">With over a decade behind the lens, I've had the privilege of documenting love stories, fashion moments, and life's most significant milestones across India and beyond.</p>
+      <p style="color:var(--muted);line-height:1.82;margin-bottom:2rem;font-size:.93rem">My work is driven by an obsession with light, emotion, and the decisive moment — that split second when everything aligns perfectly. Every photograph I create is a permanent piece of your legacy.</p>
+      <div style="margin-bottom:2rem">
+        <div class="award-line">Best Wedding Photographer — India Photography Awards 2023</div>
+        <div class="award-line">Featured in Vogue India &amp; Harper's Bazaar</div>
+        <div class="award-line">International Photography Award Finalist 2022</div>
+      </div>
+      <div style="display:flex;gap:.75rem">
+        <button class="soc-btn" title="Instagram">📸</button>
+        <button class="soc-btn" title="Facebook">📘</button>
+        <button class="soc-btn" title="YouTube">▶️</button>
+        <button class="soc-btn" title="Pinterest">📌</button>
+      </div>
+    </div>
+  </div>  
+  <div class="stats-row" id="stats-row">
+    <div class="reveal"><div class="stat-n" id="s-clients">0</div><div class="stat-l">Happy Clients</div></div>
+    <div class="reveal" style="animation-delay:.18s"><div class="stat-n" id="s-shoots">0</div><div class="stat-l">Photoshoots</div></div>
+    <div class="reveal" style="animation-delay:.35s"><div class="stat-n" id="s-years">0</div><div class="stat-l">Years Experience</div></div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" style="background:rgba(255,255,255,.012)">
+  <div style="max-width:1200px;margin:0 auto">
+    <div class="reveal" style="text-align:center;margin-bottom:3.5rem">
+      <p class="tag">My Work</p>
+      <h2 class="pd" style="font-size:clamp(2rem,4vw,3.2rem);margin-top:.8rem;margin-bottom:1.2rem">Featured <em style="color:var(--gold)">Portfolio</em></h2>
+      <div class="rule" style="margin:0 auto"></div>
+    </div>
+    <div class="filter-row reveal">
+      <button class="flt-btn active" onclick="filterPort('All',this)">All</button>
+      <button class="flt-btn" onclick="filterPort('Wedding',this)">Wedding</button>
+      <button class="flt-btn" onclick="filterPort('Portrait',this)">Portrait</button>
+      <button class="flt-btn" onclick="filterPort('Fashion',this)">Fashion</button>
+      <button class="flt-btn" onclick="filterPort('Wildlife',this)">Wildlife</button>
+      <button class="flt-btn" onclick="filterPort('Travel',this)">Travel</button>
+      <button class="flt-btn" onclick="filterPort('Events',this)">Events</button>
+    </div>
+    <div class="masonry" id="masonry"></div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox">
+  <button class="lb-close" onclick="closeLb()">✕</button>
+  <div class="lb-img-wrap">
+    <img id="lb-img" src="" alt=""/>
+    <div class="lb-caption">
+      <p class="tag" id="lb-cat"></p>
+      <h3 class="pd" style="font-size:1.4rem;margin-top:.4rem" id="lb-title"></h3>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div style="max-width:1200px;margin:0 auto">
+    <div class="reveal" style="text-align:center;margin-bottom:3.5rem">
+      <p class="tag">What I Offer</p>
+      <h2 class="pd" style="font-size:clamp(2rem,4vw,3.2rem);margin-top:.8rem;margin-bottom:1.2rem">Photography <em style="color:var(--gold)">Services</em></h2>
+      <div class="rule" style="margin:0 auto"></div>
+    </div>
+    <div class="services-grid">
+      <div class="svc-card reveal"><div class="svc-icon">💍</div><h3 class="pd" style="font-size:1.2rem;margin-bottom:.8rem">Wedding Photography</h3><p style="color:var(--muted);font-size:.88rem;line-height:1.72;margin-bottom:1.4rem">Capturing the most precious moments of your special day with timeless elegance and artistry.</p><div style="display:flex;justify-content:space-between;align-items:center"><span class="svc-price">From ₹50,000</span><button class="learn-btn">Learn More →</button></div></div>
+      <div class="svc-card reveal" style="animation-delay:.12s"><div class="svc-icon">🌹</div><h3 class="pd" style="font-size:1.2rem;margin-bottom:.8rem">Pre-Wedding</h3><p style="color:var(--muted);font-size:.88rem;line-height:1.72;margin-bottom:1.4rem">Romantic storytelling sessions that celebrate your love story before the big day arrives.</p><div style="display:flex;justify-content:space-between;align-items:center"><span class="svc-price">From ₹25,000</span><button class="learn-btn">Learn More →</button></div></div>
+      <div class="svc-card reveal" style="animation-delay:.24s"><div class="svc-icon">🖼️</div><h3 class="pd" style="font-size:1.2rem;margin-bottom:.8rem">Portrait Photography</h3><p style="color:var(--muted);font-size:.88rem;line-height:1.72;margin-bottom:1.4rem">Soul-revealing portraits that capture your authentic essence and personality in every frame.</p><div style="display:flex;justify-content:space-between;align-items:center"><span class="svc-price">From ₹10,000</span><button class="learn-btn">Learn More →</button></div></div>
+      <div class="svc-card reveal" style="animation-delay:.1s"><div class="svc-icon">🎉</div><h3 class="pd" style="font-size:1.2rem;margin-bottom:.8rem">Event Photography</h3><p style="color:var(--muted);font-size:.88rem;line-height:1.72;margin-bottom:1.4rem">Corporate and social events documented with precision and a creative artistic eye.</p><div style="display:flex;justify-content:space-between;align-items:center"><span class="svc-price">From ₹20,000</span><button class="learn-btn">Learn More →</button></div></div>
+      <div class="svc-card reveal" style="animation-delay:.22s"><div class="svc-icon">👗</div><h3 class="pd" style="font-size:1.2rem;margin-bottom:.8rem">Fashion Photography</h3><p style="color:var(--muted);font-size:.88rem;line-height:1.72;margin-bottom:1.4rem">Editorial and commercial shoots that make every frame magazine-worthy and brand-defining.</p><div style="display:flex;justify-content:space-between;align-items:center"><span class="svc-price">From ₹30,000</span><button class="learn-btn">Learn More →</button></div></div>
+      <div class="svc-card reveal" style="animation-delay:.34s"><div class="svc-icon">📦</div><h3 class="pd" style="font-size:1.2rem;margin-bottom:.8rem">Product Photography</h3><p style="color:var(--muted);font-size:.88rem;line-height:1.72;margin-bottom:1.4rem">Clean, compelling product imagery that elevates your brand and drives real conversions.</p><div style="display:flex;justify-content:space-between;align-items:center"><span class="svc-price">From ₹15,000</span><button class="learn-btn">Learn More →</button></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" style="background:rgba(255,255,255,.012)">
+  <div style="max-width:1200px;margin:0 auto">
+    <div class="reveal" style="text-align:center;margin-bottom:3.5rem">
+      <p class="tag">Client Love</p>
+      <h2 class="pd" style="font-size:clamp(2rem,4vw,3.2rem);margin-top:.8rem;margin-bottom:1.2rem">What Clients <em style="color:var(--gold)">Say</em></h2>
+      <div class="rule" style="margin:0 auto"></div>
+    </div>
+    <div class="testi-wrap reveal">
+      <div class="testi-card" id="testi-card">
+        <div class="testi-quote">"</div>
+        <p class="testi-text" id="testi-text">Loading…</p>
+        <div style="display:flex;align-items:center;justify-content:center;gap:1.1rem">
+          <img class="testi-avatar" id="testi-img" src="" alt=""/>
+          <div style="text-align:left">
+            <div class="testi-name" id="testi-name"></div>
+            <div class="testi-role" id="testi-role"></div>
+          </div>
+          <div class="testi-stars" style="margin-left:.6rem">★★★★★</div>
+        </div>
+      </div>
+      <div class="testi-dots" id="testi-dots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing">
+  <div style="max-width:1200px;margin:0 auto">
+    <div class="reveal" style="text-align:center;margin-bottom:3.5rem">
+      <p class="tag">Investment</p>
+      <h2 class="pd" style="font-size:clamp(2rem,4vw,3.2rem);margin-top:.8rem;margin-bottom:1.2rem">Simple, Transparent <em style="color:var(--gold)">Pricing</em></h2>
+      <div class="rule" style="margin:0 auto"></div>
+    </div>
+    <div class="pricing-grid">
+      <div class="p-card reveal">
+        <p class="p-name pd">Basic</p>
+        <p class="p-desc">Perfect for portraits &amp; intimate sessions</p>
+        <div class="p-price pd">₹15,000</div>
+        <div class="p-feats">
+          <div class="p-feat">2 Hours Coverage</div>
+          <div class="p-feat">50 Edited Photos</div>
+          <div class="p-feat">Online Gallery</div>
+          <div class="p-feat">High-Res Downloads</div>
+        </div>
+        <a href="#contact"><button class="book-btn">Book Now</button></a>
+      </div>
+      <div class="p-card featured reveal" style="animation-delay:.15s">
+        <div class="p-badge">Most Popular</div>
+        <p class="p-name pd">Premium</p>
+        <p class="p-desc">Our signature package for weddings</p>
+        <div class="p-price pd">₹45,000</div>
+        <div class="p-feats">
+          <div class="p-feat">5 Hours Coverage</div>
+          <div class="p-feat">150 Edited Photos</div>
+          <div class="p-feat">Premium Album</div>
+          <div class="p-feat">Drone Shots Included</div>
+          <div class="p-feat">Engagement Shoot</div>
+        </div>
+        <a href="#contact"><button class="book-btn">Book Now</button></a>
+      </div>
+      <div class="p-card reveal" style="animation-delay:.3s">
+        <p class="p-name pd">Luxury</p>
+        <p class="p-desc">The ultimate photography experience</p>
+        <div class="p-price pd">₹90,000</div>
+        <div class="p-feats">
+          <div class="p-feat">Full Day Coverage</div>
+          <div class="p-feat">Unlimited Photos</div>
+          <div class="p-feat">Premium Album</div>
+          <div class="p-feat">Drone + Cinematic Video</div>
+          <div class="p-feat">2 Photographers</div>
+        </div>
+        <a href="#contact"><button class="book-btn">Book Now</button></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section id="blog" style="background:rgba(255,255,255,.012)">
+  <div style="max-width:1200px;margin:0 auto">
+    <div class="reveal" style="text-align:center;margin-bottom:3.5rem">
+      <p class="tag">Insights</p>
+      <h2 class="pd" style="font-size:clamp(2rem,4vw,3.2rem);margin-top:.8rem;margin-bottom:1.2rem">From The <em style="color:var(--gold)">Journal</em></h2>
+      <div class="rule" style="margin:0 auto"></div>
+    </div>
+    <div class="blog-grid">
+      <div class="blog-card reveal"><div class="blog-img"><img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=600&q=80" alt=""/></div><div class="blog-body"><div style="display:flex;justify-content:space-between;margin-bottom:.6rem"><span class="blog-cat">Photography Tips</span><span class="blog-date">May 12, 2025</span></div><h3 class="blog-title pd">Golden Hour Magic: Making Art with Natural Light</h3><p class="blog-excerpt">Discover how perfect timing transforms ordinary scenes into extraordinary visual poetry that moves the soul.</p><button class="read-btn"><a href="golden-hour.html" class="read-btn">Read More →</a></button></div></div>
+      <div class="blog-card reveal" style="animation-delay:.15s"><div class="blog-img"><img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600&q=80" alt=""/></div><div class="blog-body"><div style="display:flex;justify-content:space-between;margin-bottom:.6rem"><span class="blog-cat">Behind the Scenes</span><span class="blog-date">Apr 28, 2025</span></div><h3 class="blog-title pd">A Day in the Life: Shooting a Royal Wedding</h3><p class="blog-excerpt">An intimate look at what goes into capturing the most important day of someone's life with grace and artistry.</p><button class="read-btn"><a href="royal-wedding.html" class="read-btn">Read More →</a></button></div></div>
+      <div class="blog-card reveal" style="animation-delay:.3s"><div class="blog-img"><img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=600&q=80" alt=""/></div><div class="blog-body"><div style="display:flex;justify-content:space-between;margin-bottom:.6rem"><span class="blog-cat">Gear &amp; Tech</span><span class="blog-date">Apr 5, 2025</span></div><h3 class="blog-title pd">My Essential Kit: Tools That Define My Style</h3><p class="blog-excerpt">From prime lenses to light modifiers, these are the tools that fundamentally changed my photography.</p><button class="read-btn"><a href="gear-tech.html" class="read-btn">Read More →</a></button></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- INSTAGRAM -->
+<section>
+  <div style="max-width:1200px;margin:0 auto">
+    <div class="reveal" style="text-align:center;margin-bottom:2.5rem">
+      <p class="tag">Follow Along</p>
+      <h2 class="pd" style="font-size:clamp(1.6rem,3vw,2.5rem);margin-top:.8rem">@craft_line_pictures on <em style="color:var(--gold)">Instagram</em></h2>
+    </div>
+    <div class="insta-grid reveal">
+      <div class="insta-item"><img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=400&q=80" alt=""/><div class="insta-ov">❤</div></div>
+      <div class="insta-item"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&q=80" alt=""/><div class="insta-ov">❤</div></div>
+      <div class="insta-item"><img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=400&q=80" alt=""/><div class="insta-ov">❤</div></div>
+      <div class="insta-item"><img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=400&q=80" alt=""/><div class="insta-ov">❤</div></div>
+      <div class="insta-item"><img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=400&q=80" alt=""/><div class="insta-ov">❤</div></div>
+      <div class="insta-item"><img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=400&q=80" alt=""/><div class="insta-ov">❤</div></div>
+      <div class="insta-item"><img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=400&q=80" alt=""/><div class="insta-ov">❤</div></div>
+      <div class="insta-item"><img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400&q=80" alt=""/><div class="insta-ov">❤</div></div>
+    </div>
+    <div style="text-align:center;margin-top:2.2rem">
+      <a href="https://www.instagram.com/craft_line_pictures_/" class="btn-g" style="padding:.9rem 2.4rem;font-size:.78rem">Follow on Instagram</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="background:rgba(255,255,255,.012)">
+  <div style="max-width:1200px;margin:0 auto">
+    <div class="reveal" style="text-align:center;margin-bottom:3.5rem">
+      <p class="tag">Get in Touch</p>
+      <h2 class="pd" style="font-size:clamp(2rem,4vw,3.2rem);margin-top:.8rem;margin-bottom:1.2rem">Let's Create Something <em style="color:var(--gold)">Beautiful</em></h2>
+      <div class="rule" style="margin:0 auto"></div>
+    </div>
+    <div class="contact-grid">
+      <div class="reveal">
+        <div style="display:flex;gap:1.2rem;margin-bottom:2.2rem;align-items:flex-start">
+          <div class="contact-icon-wrap">📍</div>
+          <div><div class="contact-label">Address</div><div class="contact-val">5-2-326/,Mullai Nagar,P.T.R Colony,Uthamapalayam,Theni 625533</div></div>
+        </div>
+        <div style="display:flex;gap:1.2rem;margin-bottom:2.2rem;align-items:flex-start">
+          <div class="contact-icon-wrap">📞</div>
+          <div><div class="contact-label">Phone</div><div class="contact-val">+91 99525 02139</div></div>
+        </div>
+        <div style="display:flex;gap:1.2rem;margin-bottom:2.2rem;align-items:flex-start">
+          <div class="contact-icon-wrap">✉️</div>
+          <div><div class="contact-label">Email</div><div class="contact-val">abdurrahmanmmzh.com</div></div>
+        </div>
+        <div style="display:flex;gap:1.2rem;margin-bottom:2.2rem;align-items:flex-start">
+          <div class="contact-icon-wrap">🕐</div>
+          <div><div class="contact-label">Working Hours</div><div class="contact-val">Mon – Sun: 24hrs </div></div>
+        </div>
+      </div>
+      <div class="form-wrap reveal" style="animation-delay:.2s" >
+        <form action="sendmail.php" method="POST">
+
+    <div class="form-row">
+        <input class="form-input" type="text" name="name" placeholder="Your Name" required>
+        <input class="form-input" type="email" name="email" placeholder="Email Address" required>
+    </div>
+
+    <div class="form-row">
+        <input class="form-input" type="tel" name="phone" placeholder="Phone Number">
+
+        <select class="form-input" name="eventType">
+            <option value="">Event Type</option>
+            <option>Wedding</option>
+            <option>Pre-Wedding</option>
+            <option>Portrait</option>
+            <option>Fashion</option>
+            <option>Events</option>
+            <option>Product</option>
+        </select>
+    </div>
+
+    <textarea class="form-input" rows="5" name="message"
+        placeholder="Tell me about your vision and date..."></textarea>
+
+    <button type="submit" class="send-btn">
+        SEND MESSAGE ✦
+    </button>
+
+</form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="logo" style="margin-bottom:1rem">Craft line<span>Pictures</span></div>
+      <p style="color:var(--muted);line-height:1.75;font-size:.87rem;max-width:280px">Capturing timeless stories through light, shadow, and pure emotion. Based in Bengaluru, serving clients worldwide.</p>
+    </div>
+    <div>
+      <h4 class="footer-col-title">Quick Links</h4>
+      <a class="footer-link" href="#hero">Home</a>
+      <a class="footer-link" href="#about">About</a>
+      <a class="footer-link" href="#portfolio">Portfolio</a>
+      <a class="footer-link" href="#services">Services</a>
+      <a class="footer-link" href="#contact">Contact</a>
+    </div>
+    <div>
+      <h4 class="footer-col-title">Services</h4>
+      <span class="footer-link">Wedding</span>
+      <span class="footer-link">Pre-Wedding</span>
+      <span class="footer-link">Portraits</span>
+      <span class="footer-link">Fashion</span>
+      <span class="footer-link">Events</span>
+    </div>
+    <div>
+      <h4 class="footer-col-title">Connect</h4>
+      <span class="footer-link"><a href="https://www.instagram.com/craft_line_pictures_/" target="_blank">Instagram</a></span>
+      <span class="footer-link"><a href="https://www.facebook.com/craftlinepictures/" target="_blank">Facebook</a></span>
+      <span class="footer-link"><a href="https://www.youtube.com/c/CraftlinePictures" target="_blank">YouTube</a></span>
+      <span class="footer-link"><a href="https://www.pinterest.com/craftlinepictures/" target="_blank">Pinterest</a></span>
+      <span class="footer-link"><a href="https://www.linkedin.com/company/craftlinepictures/" target="_blank">LinkedIn</a></span>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Craftline Pictures. All rights reserved.</span>
+    <span>Crafted with ♥ in Tamilnadu, India</span>
+  </div>
+</footer>
+
+<!-- FLOATING ELEMENTS -->
+<button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">↑</button>
+<a href="https://wa.me/919952502139?text=Hi%20Craftline%20Pictures,%20I%20would%20like%20to%20book%20a%20photoshoot." target="_blank" id="whatsapp" title="WhatsApp">💬</a>
+<div id="sticky-cta"><a href="#contact">📸 Book a Session</a></div>
+
+<script>
+// ---- DATA ----
+const PORT = [
+  {cat:'Wedding',title:'Sarah & James',img:'https://images.unsplash.com/photo-1519741497674-611481863552?w=700&q=80'},
+  {cat:'Portrait',title:'Golden Hour',img:'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=700&q=80'},
+  {cat:'Fashion',title:'Vogue Noir',img:'https://images.unsplash.com/photo-1509631179647-0177331693ae?w=700&q=80'},
+  {cat:'Wildlife',title:'Serengeti',img:'https://images.unsplash.com/photo-1516426122078-c23e76319801?w=700&q=80'},
+  {cat:'Travel',title:'Santorini Dusk',img:'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=700&q=80'},
+  {cat:'Events',title:'Gala Night',img:'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=700&q=80'},
+  {cat:'Wedding',title:'Emma & Lucas',img:'https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=700&q=80'},
+  {cat:'Portrait',title:'Urban Soul',img:'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=700&q=80'},
+  {cat:'Fashion',title:'Monochrome',img:'https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=700&q=80'},
+];
+
+const TESTI = [
+  {name:'Priya Sharma',role:'Bride, 2024',img:'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80',text:'Absolutely breathtaking work. Every photo tells a story so beautifully. We will cherish these memories for a lifetime.'},
+  {name:'Arjun Mehta',role:'CEO, TechVentures',img:'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80',text:'The product shots completely transformed our brand presence. Professional, incredibly creative, and always on time.'},
+  {name:'Ananya Reddy',role:'Fashion Blogger',img:'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80',text:'My portfolio photos got me signed with three agencies. The artistry and attention to detail here is truly unmatched.'},
+  {name:'Rahul Kapoor',role:'Event Manager',img:'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80',text:'Our annual gala was captured perfectly. The candid moments and creative compositions were simply spectacular.'},
+];
+
+// ---- LOADING ----
+window.addEventListener('load', ()=>{
+  setTimeout(()=>{
+    document.getElementById('loading').classList.add('done');
+    setTimeout(()=>{
+      document.getElementById('loading').style.display='none';
+      initReveal();
+      initStats();
+    },650);
+  },2600);
+});
+
+// ---- HERO SLIDESHOW ----
+let slide=0;
+function setSlide(n){
+  document.getElementById('slide'+slide).classList.remove('active');
+  document.querySelectorAll('.hero-dot')[slide].classList.remove('active');
+  slide=n;
+  document.getElementById('slide'+slide).classList.add('active');
+  document.querySelectorAll('.hero-dot')[slide].classList.add('active');
+}
+setInterval(()=>setSlide((slide+1)%3),5500);
+
+// ---- NAVBAR ----
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>{
+  nav.classList.toggle('solid',window.scrollY>70);
+  document.getElementById('back-top').classList.toggle('show',window.scrollY>400);
+});
+
+// ---- HAMBURGER ----
+const hmbgr=document.getElementById('hmbgr');
+const mobMenu=document.getElementById('mob-menu');
+hmbgr.addEventListener('click',()=>{
+  hmbgr.classList.toggle('open');
+  mobMenu.style.display=mobMenu.style.display==='flex'?'none':'flex';
+});
+function closeMob(){hmbgr.classList.remove('open');mobMenu.style.display='none';}
+
+// ---- PORTFOLIO ----
+function renderPort(filter){
+  const m=document.getElementById('masonry');
+  const items=filter==='All'?PORT:PORT.filter(p=>p.cat===filter);
+  m.innerHTML=items.map(p=>`
+    <div class="port-item" onclick="openLb('${p.img.replace('w=700','w=1400')}','${p.cat}','${p.title}')">
+      <img src="${p.img}" alt="${p.title}" loading="lazy"/>
+      <div class="port-overlay">
+        <p class="port-cat">${p.cat}</p>
+        <p class="port-title">${p.title}</p>
+      </div>
+    </div>`).join('');
+}
+renderPort('All');
+
+function filterPort(cat,btn){
+  document.querySelectorAll('.flt-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  const m=document.getElementById('masonry');
+  m.style.opacity='0';
+  setTimeout(()=>{renderPort(cat);m.style.opacity='1';m.style.transition='opacity .4s';},300);
+}
+
+// ---- LIGHTBOX ----
+function openLb(img,cat,title){
+  document.getElementById('lb-img').src=img;
+  document.getElementById('lb-cat').textContent=cat;
+  document.getElementById('lb-title').textContent=title;
+  document.getElementById('lightbox').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeLb(){
+  document.getElementById('lightbox').classList.remove('open');
+  document.body.style.overflow='';
+}
+document.getElementById('lightbox').addEventListener('click',function(e){if(e.target===this)closeLb();});
+
+// ---- TESTIMONIALS ----
+let tIdx=0;
+function buildTesti(){
+  const dotsEl=document.getElementById('testi-dots');
+  dotsEl.innerHTML=TESTI.map((_,i)=>`<button class="t-dot ${i===0?'active':''}" onclick="setTesti(${i})"></button>`).join('');
+}
+function setTesti(n){
+  tIdx=n;
+  const t=TESTI[n];
+  const card=document.getElementById('testi-card');
+  card.style.opacity='0';
+  setTimeout(()=>{
+    document.getElementById('testi-text').textContent=t.text;
+    document.getElementById('testi-img').src=t.img;
+    document.getElementById('testi-img').alt=t.name;
+    document.getElementById('testi-name').textContent=t.name;
+    document.getElementById('testi-role').textContent=t.role;
+    document.querySelectorAll('.t-dot').forEach((d,i)=>d.classList.toggle('active',i===n));
+    card.style.opacity='1';card.style.transition='opacity .5s';
+  },300);
+}
+buildTesti();
+setTesti(0);
+setInterval(()=>setTesti((tIdx+1)%TESTI.length),4500);
+
+// ---- SCROLL REVEAL ----
+function initReveal(){
+  const obs=new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vis');}});
+  },{threshold:.1});
+  document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+}
+
+// ---- STATS COUNTER ----
+let statsRan=false;
+function initStats(){
+  const statsRow=document.getElementById('stats-row');
+  if(!statsRow)return;
+  const obs=new IntersectionObserver((entries)=>{
+    if(entries[0].isIntersecting&&!statsRan){
+      statsRan=true;
+      count('s-clients',500,2000);
+      count('s-shoots',1200,2200);
+      count('s-years',10,1400);
+    }
+  },{threshold:.3});
+  obs.observe(statsRow);
+}
+function count(id,target,dur){
+  const el=document.getElementById(id);
+  let v=0;
+  const step=Math.ceil(target/(dur/16));
+  const t=setInterval(()=>{v=Math.min(v+step,target);el.textContent=v+(target>=100?'+':'+');if(v>=target)clearInterval(t);},16);
+}
+
+// ---- SEND ----
+function handleSend(){
+  const msg=document.getElementById('send-msg');
+  msg.style.display='block';
+  setTimeout(()=>{msg.style.display='none';},4500);
+}
+
+//mail
+
+function sendMail() {
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const phone = document.getElementById("phone").value;
+    const eventType = document.getElementById("eventType").value;
+    const message = document.getElementById("message").value;
+
+    const subject = encodeURIComponent("Photography Booking Request");
+    const body = encodeURIComponent(
+        `Name: ${name}\n` +
+        `Email: ${email}\n` +
+        `Phone: ${phone}\n` +
+        `Event Type: ${eventType}\n\n` +
+        `Message:\n${message}`
+    );
+
+    window.location.href =
+        `mailto:hussainsonoor@gmail.com?subject=${subject}&body=${body}`;
+}
+
+// ---- DARK TOGGLE ----
+let dark=true;
+document.getElementById('dark-toggle').addEventListener('click',function(){
+  dark=!dark;
+  document.documentElement.style.setProperty('--bg',dark?'#0B0B0B':'#F2EFE8');
+  document.documentElement.style.setProperty('--bg2',dark?'#111':'#E8E4D8');
+  document.documentElement.style.setProperty('--bg3',dark?'#161616':'#DDD8CC');
+  document.documentElement.style.setProperty('--fg',dark?'#F5F5F0':'#1A1A16');
+  document.documentElement.style.setProperty('--muted',dark?'rgba(245,245,240,.55)':'rgba(26,26,22,.5)');
+  document.documentElement.style.setProperty('--border',dark?'rgba(255,255,255,.07)':'rgba(0,0,0,.1)');
+  document.body.style.background=dark?'#0B0B0B':'#F2EFE8';
+  this.textContent=dark?'☀':'🌙';
+});
+</script>
+</body>
+</html>
